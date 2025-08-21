@@ -1,0 +1,71 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+.skill{
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.skills {
+  background: black;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid #a986fd;
+  box-shadow: 0 0 5px #a986fd;
+}
+.imgs {
+  width: 100px; /* Set desired width */
+  height: auto;
+  object-fit: cover;
+}
+.skills h3 {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.skills p {
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+
+
+
+/* Responsive views */
+@media (max-width: 488px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    padding: 50px;
+  }
+  
+  .skill {
+    font-size: 22px;
+    margin:40px 0px -10px 0px;
+  }
+  
+  .skills {
+    padding: 15px;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .skills h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .skills p {
+    font-size: 12px;
+    margin: 20px 80px;
+    text-align: center;
+  }
+}
